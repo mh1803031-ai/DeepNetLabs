@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepNet Labs - Mengupas Tuntas Bit demi Bit</title>
+    <meta name="description" content="Portal laboratorium digital untuk eksplorasi mendalam teknologi jaringan dan infrastruktur">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                            <line x1="12" y1="5" x2="20" y2="5"></line>
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                        </svg>
+                        <div class="status-dot"></div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">DeepNet</span>
+                        <span class="logo-accent">Labs</span>
+                    </div>
+                </div>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="#labs" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg>
+                        Interactive Labs
+                    </a>
+                    <a href="#knowledge" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        Knowledge Base
+                    </a>
+                    <a href="#deepdive" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        Deep Dives
+                    </a>
+                    <a href="#packets" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                        Packet Analysis
+                    </a>
+                    <a href="#community" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        Community
+                    </a>
+                    <button class="cta-button">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Start Free Trial
+                    </button>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Toggle mobile menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#labs" class="mobile-nav-link">Interactive Labs</a>
+            <a href="#knowledge" class="mobile-nav-link">Knowledge Base</a>
+            <a href="#deepdive" class="mobile-nav-link">Deep Dives</a>
+            <a href="#packets" class="mobile-nav-link">Packet Analysis</a>
+            <a href="#community" class="mobile-nav-link">Community</a>
+            <button class="mobile-cta-button">Start Free Trial</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="grid-pattern"></div>
+            <svg class="circuit-lines" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.3" />
+                        <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.1" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,100 Q200,50 400,100 T800,100" stroke="url(#gradient1)" strokeWidth="2" fill="none" className="animate-pulse"></path>
+                <path d="M100,0 Q150,200 100,400 T100,800" stroke="url(#gradient1)" strokeWidth="2" fill="none" className="animate-pulse delay-1000"></path>
+                <circle cx="200" cy="200" r="3" fill="#06b6d4" className="animate-pulse"></circle>
+                <circle cx="600" cy="400" r="3" fill="#3b82f6" className="animate-pulse delay-500"></circle>
+                <circle cx="400" cy="600" r="3" fill="#06b6d4" className="animate-pulse delay-1000"></circle>
+            </svg>
+        </div>
+
+        <div class="hero-content">
+            <div class="status-badge">
+                <div class="status-dot"></div>
+                <span>SYSTEM ONLINE</span>
+                <span>|</span>
+                <span>v2.0.1</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span>DeepNet</span>
+                <span class="gradient-text">Labs</span>
+            </h1>
+            
+            <p class="hero-subtitle">Mengupas Tuntas Bit demi Bit</p>
+            
+            <p class="hero-description">
+                Portal laboratorium digital untuk eksplorasi, analisis, dan implementasi teknologi jaringan dan infrastruktur secara mendalam. 
+                Dari simulasi router hingga analisis paket - pelajari teknologi dari dalam ke luar.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="4 17 10 11 4 5"></polyline>
+                        <line x1="12" y1="19" x2="20" y2="19"></line>
+                    </svg>
+                    Start Interactive Lab
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+                <button class="secondary-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Watch Demo
+                </button>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="4 17 10 11 4 5"></polyline>
+                        <line x1="12" y1="19" x2="20" y2="19"></line>
+                    </svg>
+                    <h4>Interactive Labs</h4>
+                    <p>Simulasi jaringan real-time</p>
+                </div>
+                <div class="feature-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    <h4>Deep Analysis</h4>
+                    <p>Packet-level inspection</p>
+                </div>
+                <div class="feature-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <h4>Automation</h4>
+                    <p>Python & Go scripts</p>
+                </div>
+                <div class="feature-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    <h4>Security Focus</h4>
+                    <p>Zero-trust architecture</p>
+                </div>
+            </div>
+
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Interactive Labs</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Deep Articles</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Lab Access</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Labs Section -->
+    <section id="labs" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="4 17 10 11 4 5"></polyline>
+                        <line x1="12" y1="19" x2="20" y2="19"></line>
+                    </svg>
+                    <span>Interactive Labs</span>
+                </div>
+                <h2>Learn by <span class="gradient-text">Doing</span></h2>
+                <p>Access real network environments directly from your browser. No setup required - just click and start learning with hands-on experience.</p>
+            </div>
+
+            <div class="lab-filters">
+                <button class="filter-button active">All Labs</button>
+                <button class="filter-button">Routing</button>
+                <button class="filter-button">Cloud Networking</button>
+                <button class="filter-button">Security</button>
+                <button class="filter-button">Automation</button>
+                <button class="filter-button">Container Networking</button>
+            </div>
+
+            <div class="labs-grid">
+                <div class="lab-card">
+                    <div class="lab-header">
+                        <div class="lab-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div class="lab-badges">
+                            <span class="badge premium">Premium</span>
+                            <span class="badge advanced">Advanced</span>
+                        </div>
+                    </div>
+                    <h3>BGP Route Reflector Configuration</h3>
+                    <p>Master BGP route reflector design and implementation in large-scale networks.</p>
+                    <div class="lab-stats">
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 45 min</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg> 1,234</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                        </svg> 4.8</span>
+                    </div>
+                    <div class="lab-topics">
+                        <span>iBGP Full Mesh</span>
+                        <span>Route Reflector</span>
+                        <span>Route Policy</span>
+                    </div>
+                    <button class="lab-button premium">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Unlock Lab
+                    </button>
+                </div>
+
+                <div class="lab-card">
+                    <div class="lab-header">
+                        <div class="lab-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="lab-badges">
+                            <span class="badge premium">Premium</span>
+                            <span class="badge intermediate">Intermediate</span>
+                        </div>
+                    </div>
+                    <h3>Kubernetes CNI Deep Dive</h3>
+                    <p>Explore container networking interfaces and implement custom CNI plugins.</p>
+                    <div class="lab-stats">
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 60 min</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg> 892</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                        </svg> 4.9</span>
+                    </div>
+                    <div class="lab-topics">
+                        <span>CNI Specification</span>
+                        <span>Network Policies</span>
+                        <span>Service Mesh</span>
+                    </div>
+                    <button class="lab-button premium">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Unlock Lab
+                    </button>
+                </div>
+
+                <div class="lab-card">
+                    <div class="lab-header">
+                        <div class="lab-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+                        <div class="lab-badges">
+                            <span class="badge intermediate">Intermediate</span>
+                        </div>
+                    </div>
+                    <h3>AWS VPC Transit Gateway</h3>
+                    <p>Design and implement hub-and-spoke network architecture in AWS.</p>
+                    <div class="lab-stats">
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 30 min</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg> 2,156</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                        </svg> 4.7</span>
+                    </div>
+                    <div class="lab-topics">
+                        <span>VPC Peering</span>
+                        <span>Transit Gateway</span>
+                        <span>Route Tables</span>
+                    </div>
+                    <button class="lab-button">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Start Lab
+                    </button>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3>Ready to Build Your Network Skills?</h3>
+                <p>Join thousands of network engineers who are advancing their careers with hands-on experience. Start with free labs or unlock our full premium library.</p>
+                <div class="cta-buttons">
+                    <button class="primary-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg>
+                        Browse All Labs
+                    </button>
+                    <button class="secondary-button">View Pricing Plans</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Base Section -->
+    <section id="knowledge" class="section alt">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <span>Knowledge Base</span>
+                </div>
+                <h2>Structured <span class="gradient-text">Technical Encyclopedia</span></h2>
+                <p>Every concept, protocol, and technology explained in depth. Interconnected articles create a comprehensive learning path from basics to advanced topics.</p>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Search for any concept, protocol, or technology...">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <div class="popular-topics">
+                <h4>Popular Topics:</h4>
+                <div class="topic-tags">
+                    <span class="topic-tag">BGP</span>
+                    <span class="topic-tag">OSPF</span>
+                    <span class="topic-tag">VLAN</span>
+                    <span class="topic-tag">NAT</span>
+                    <span class="topic-tag">DNS</span>
+                    <span class="topic-tag">HTTP/3</span>
+                    <span class="topic-tag">QUIC</span>
+                    <span class="topic-tag">gRPC</span>
+                </div>
+            </div>
+
+            <div class="knowledge-grid">
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">🌐</div>
+                    <div class="knowledge-content">
+                        <h4>Networking Fundamentals</h4>
+                        <p>Core concepts and protocols that power modern networks</p>
+                        <div class="knowledge-stats">
+                            <span>156 articles</span>
+                            <span>2 hours ago</span>
+                        </div>
+                        <div class="knowledge-topics">
+                            <span>TCP/IP</span>
+                            <span>OSI Model</span>
+                            <span>Routing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">🔒</div>
+                    <div class="knowledge-content">
+                        <h4>Cybersecurity</h4>
+                        <p>Security principles, threats, and defense mechanisms</p>
+                        <div class="knowledge-stats">
+                            <span>89 articles</span>
+                            <span>5 hours ago</span>
+                        </div>
+                        <div class="knowledge-topics">
+                            <span>Firewalls</span>
+                            <span>VPN</span>
+                            <span>Zero Trust</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">☁️</div>
+                    <div class="knowledge-content">
+                        <h4>Cloud Computing</h4>
+                        <p>Cloud architectures, services, and best practices</p>
+                        <div class="knowledge-stats">
+                            <span>124 articles</span>
+                            <span>1 day ago</span>
+                        </div>
+                        <div class="knowledge-topics">
+                            <span>AWS</span>
+                            <span>Kubernetes</span>
+                            <span>Serverless</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">🤖</div>
+                    <div class="knowledge-content">
+                        <h4>Network Automation</h4>
+                        <p>Scripting, orchestration, and infrastructure as code</p>
+                        <div class="knowledge-stats">
+                            <span>67 articles</span>
+                            <span>3 hours ago</span>
+                        </div>
+                        <div class="knowledge-topics">
+                            <span>Python</span>
+                            <span>Ansible</span>
+                            <span>Terraform</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">🔧</div>
+                    <div class="knowledge-content">
+                        <h4>Infrastructure</h4>
+                        <p>Hardware, virtualization, and data center design</p>
+                        <div class="knowledge-stats">
+                            <span>93 articles</span>
+                            <span>6 hours ago</span>
+                        </div>
+                        <div class="knowledge-topics">
+                            <span>Virtualization</span>
+                            <span>Storage</span>
+                            <span>Load Balancing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">🗄️</div>
+                    <div class="knowledge-content">
+                        <h4>Database Systems</h4>
+                        <p>Database architectures, optimization, and replication</p>
+                        <div class="knowledge-stats">
+                            <span>78 articles</span>
+                            <span>4 hours ago</span>
+                        </div>
+                        <div class="knowledge-topics">
+                            <span>SQL</span>
+                            <span>NoSQL</span>
+                            <span>Replication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-articles">
+                <h3>Recently Updated</h3>
+                <div class="articles-grid">
+                    <div class="article-card">
+                        <h4>Understanding TCP Three-Way Handshake</h4>
+                        <p>Deep dive into the TCP connection establishment process with packet analysis.</p>
+                        <div class="article-meta">
+                            <span>Networking</span>
+                            <span>8 min read</span>
+                            <span>15,420 views</span>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <h4>Implementing Zero Trust Architecture</h4>
+                        <p>Step-by-step guide to implementing zero trust security model in enterprise networks.</p>
+                        <div class="article-meta">
+                            <span>Security</span>
+                            <span>12 min read</span>
+                            <span>8,934 views</span>
+                            <span>5 hours ago</span>
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <h4>Kubernetes Networking Explained</h4>
+                        <p>Complete guide to Kubernetes networking concepts and CNI implementations.</p>
+                        <div class="article-meta">
+                            <span>Cloud</span>
+                            <span>15 min read</span>
+                            <span>12,356 views</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <h4>Python Network Automation Scripts</h4>
+                        <p>Collection of practical Python scripts for network device management.</p>
+                        <div class="article-meta">
+                            <span>Automation</span>
+                            <span>10 min read</span>
+                            <span>9,876 views</span>
+                            <span>3 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packet Analysis Section -->
+    <section id="packets" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span>Packet of the Week</span>
+                </div>
+                <h2>Network <span class="gradient-text">Packet Analysis</span></h2>
+                <p>Real packet captures analyzed line by line. Learn to read network traffic like a pro with practical examples from production networks.</p>
+            </div>
+
+            <div class="search-filters">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Search packet captures...">
+                </div>
+                <button class="filter-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                    </svg>
+                    Filters
+                </button>
+            </div>
+
+            <div class="protocol-filters">
+                <button class="filter-button active">All</button>
+                <button class="filter-button">TCP</button>
+                <button class="filter-button">UDP</button>
+                <button class="filter-button">DNS</button>
+                <button class="filter-button">BGP</button>
+                <button class="filter-button">TLS</button>
+                <button class="filter-button">HTTP</button>
+                <button class="filter-button">ARP</button>
+            </div>
+
+            <div class="featured-analysis">
+                <div class="featured-header">
+                    <div>
+                        <div class="featured-badges">
+                            <span class="badge featured">Featured Analysis</span>
+                            <span class="badge warning">Security Incident</span>
+                        </div>
+                        <h3>DDoS Attack Pattern Analysis</h3>
+                        <p>Real-world DDoS attack captured and analyzed. Learn to identify attack patterns, understand traffic amplification, and implement mitigation strategies.</p>
+                    </div>
+                    <div class="featured-stats">
+                        <div class="featured-number">156</div>
+                        <div class="featured-label">packets</div>
+                    </div>
+                </div>
+
+                <div class="featured-details">
+                    <div class="detail-card">
+                        <h4>Attack Vector</h4>
+                        <p>UDP amplification using NTP servers</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Traffic Volume</h4>
+                        <p>12 Gbps sustained over 45 minutes</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Mitigation</h4>
+                        <p>Rate limiting + source filtering</p>
+                    </div>
+                </div>
+
+                <div class="featured-actions">
+                    <div class="featured-meta">
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg> Jan 15, 2024</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg> 8,234 views</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 15 min read</span>
+                    </div>
+                    <div class="featured-buttons">
+                        <button class="secondary-button">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download .pcap
+                        </button>
+                        <button class="primary-button">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            Start Analysis
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="packets-grid">
+                <div class="packet-card">
+                    <div class="packet-header">
+                        <div class="packet-status normal">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <span class="packet-protocol">TCP</span>
+                        <span class="badge beginner">Beginner</span>
+                    </div>
+                    <h4>TCP Three-Way Handshake Analysis</h4>
+                    <p>Step-by-step analysis of TCP connection establishment with SYN, SYN-ACK, and ACK packets.</p>
+                    <div class="packet-findings">
+                        <div class="finding">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            Sequence numbers
+                        </div>
+                        <div class="finding">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            Window scaling
+                        </div>
+                        <div class="finding">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            MSS negotiation
+                        </div>
+                    </div>
+                    <div class="packet-stats">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg> 7 packets</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg> 2.4 KB</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg> Jan 15</span>
+                    </div>
+                    <div class="packet-actions">
+                        <button class="packet-button outline">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            .pcap
+                        </button>
+                        <button class="packet-button">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            Analyze
+                        </button>
+                    </div>
+                </div>
+
+                <div class="packet-card">
+                    <div class="packet-header">
+                        <div class="packet-status normal">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <span class="packet-protocol">DNS</span>
+                        <span class="badge intermediate">Intermediate</span>
+                    </div>
+                    <h4>DNS Query Resolution Deep Dive</h4>
+                    <p>Complete DNS resolution process from query to response, including caching and recursion.</p>
+                    <div class="packet-findings">
+                        <div class="finding">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            EDNS0 extension
+                        </div>
+                        <div class="finding">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            DNSSEC validation
+                        </div>
+                        <div class="finding">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            CNAME chain
+                        </div>
+                    </div>
+                    <div class="packet-stats">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg> 12 packets</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg> 1.8 KB</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg> Jan 14</span>
+                    </div>
+                    <div class="packet-actions">
+                        <button class="packet-button outline">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            .pcap
+                        </button>
+                        <button class="packet-button">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            Analyze
+                        </button>
+                    </div>
+                </div>
+
+                <div class="packet-card">
+                    <div class="packet-header">
+                        <div class="packet-status warning">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <span class="packet-protocol">BGP</span>
+                        <span class="badge advanced">Advanced</span>
+                        <span class="badge premium">Premium</span>
+                    </div>
+                    <h4>BGP Route Flapping Incident</h4>
+                    <p>Analysis of BGP route flapping causing network instability and convergence issues.</p>
+                    <div class="packet-findings">
+                        <div class="finding">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            Route withdrawal
+                        </div>
+                        <div class="finding">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            Path attributes
+                        </div>
+                        <div class="finding">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            MED changes
+                        </div>
+                    </div>
+                    <div class="packet-stats">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg> 45 packets</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg> 8.2 KB</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg> Jan 13</span>
+                    </div>
+                    <div class="packet-actions">
+                        <button class="packet-button outline">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            .pcap
+                        </button>
+                        <button class="packet-button premium">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            Unlock
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit-section">
+                <h3>Have an Interesting Packet Capture?</h3>
+                <p>Share your network troubleshooting moments, attack analysis, or protocol deep-dives. Help the community learn from real-world scenarios.</p>
+                <div class="cta-buttons">
+                    <button class="primary-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        Submit Packet Capture
+                    </button>
+                    <button class="secondary-button">View Guidelines</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="section alt">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Community Forum</span>
+                </div>
+                <h2>Join the <span class="gradient-text">Technical Community</span></h2>
+                <p>Connect with thousands of network engineers, security experts, and cloud architects. Share knowledge, solve problems, and advance your career together.</p>
+            </div>
+
+            <div class="forum-stats">
+                <div class="stat-card">
+                    <div class="stat-number">15.2K</div>
+                    <div class="stat-label">Active Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4.8K</div>
+                    <div class="stat-label">Discussions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">28.5K</div>
+                    <div class="stat-label">Posts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">92%</div>
+                    <div class="stat-label">Solved Rate</div>
+                </div>
+            </div>
+
+            <div class="forum-categories">
+                <div class="category-card">
+                    <div class="category-icon">🌐</div>
+                    <div class="category-content">
+                        <h4>Networking</h4>
+                        <p>Routing, switching, and network design discussions</p>
+                        <div class="category-stats">
+                            <span>1,234 topics</span>
+                            <span>8,456 posts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🔒</div>
+                    <div class="category-content">
+                        <h4>Security</h4>
+                        <p>Cybersecurity, threats, and defense strategies</p>
+                        <div class="category-stats">
+                            <span>892 topics</span>
+                            <span>5,623 posts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🤖</div>
+                    <div class="category-content">
+                        <h4>Automation</h4>
+                        <p>Scripts, tools, and infrastructure as code</p>
+                        <div class="category-stats">
+                            <span>567 topics</span>
+                            <span>3,421 posts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">☁️</div>
+                    <div class="category-content">
+                        <h4>Cloud Native</h4>
+                        <p>Kubernetes, containers, and cloud architectures</p>
+                        <div class="category-stats">
+                            <span>789 topics</span>
+                            <span>4,567 posts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🔧</div>
+                    <div class="category-content">
+                        <h4>Troubleshooting</h4>
+                        <p>Real-world problems and solutions</p>
+                        <div class="category-stats">
+                            <span>445 topics</span>
+                            <span>2,890 posts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">📚</div>
+                    <div class="category-content">
+                        <h4>Career & Learning</h4>
+                        <p>Professional development and career advice</p>
+                        <div class="category-stats">
+                            <span>234 topics</span>
+                            <span>1,567 posts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forum-content">
+                <div class="discussions-panel">
+                    <div class="panel-header">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.19-1.69-3.3-3-4.5-3S1 7.31 1 9c0 2 3 9 3 9s3-7 3-9c0-2-1.31-3.5-3-4z"></path>
+                                <path d="M20.5 14.5A2.5 2.5 0 0 0 23 12c0-1.38-.5-2-1-3-1.19-1.69-3.3-3-4.5-3S13 7.31 13 9c0 2 3 9 3 9s3-7 3-9c0-2-1.31-3.5-3-4z"></path>
+                            </svg>
+                            Recent Discussions
+                        </h3>
+                        <button class="view-all-button">View All</button>
+                    </div>
+
+                    <div class="discussions-list">
+                        <div class="discussion-item">
+                            <div class="discussion-header">
+                                <div class="discussion-meta">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                    </svg>
+                                    <span class="discussion-category">Networking</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                    </svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                                <span class="discussion-time">2 hours ago</span>
+                            </div>
+                            <h4>BGP Route Reflector vs. Confederation - Which to Choose?</h4>
+                            <div class="discussion-tags">
+                                <span>BGP</span>
+                                <span>Design</span>
+                                <span>Best Practices</span>
+                            </div>
+                            <div class="discussion-footer">
+                                <div class="discussion-author">
+                                    <div class="author-avatar">NN</div>
+                                    <span>NetworkNinja</span>
+                                </div>
+                                <div class="discussion-stats">
+                                    <span>23 replies</span>
+                                    <span>1,456 views</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="discussion-item">
+                            <div class="discussion-header">
+                                <div class="discussion-meta">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                    </svg>
+                                    <span class="discussion-category">Cloud Native</span>
+                                </div>
+                                <span class="discussion-time">4 hours ago</span>
+                            </div>
+                            <h4>Help: Kubernetes CNI Performance Issues</h4>
+                            <div class="discussion-tags">
+                                <span>Kubernetes</span>
+                                <span>CNI</span>
+                                <span>Performance</span>
+                                <span>Help</span>
+                            </div>
+                            <div class="discussion-footer">
+                                <div class="discussion-author">
+                                    <div class="author-avatar">CE</div>
+                                    <span>CloudEngineer42</span>
+                                </div>
+                                <div class="discussion-stats">
+                                    <span>15 replies</span>
+                                    <span>892 views</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="discussion-item">
+                            <div class="discussion-header">
+                                <div class="discussion-meta">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                    </svg>
+                                    <span class="discussion-category">Automation</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                                <span class="discussion-time">6 hours ago</span>
+                            </div>
+                            <h4>Python Script for Automated Backup Configurations</h4>
+                            <div class="discussion-tags">
+                                <span>Python</span>
+                                <span>Backup</span>
+                                <span>Netmiko</span>
+                                <span>Script</span>
+                            </div>
+                            <div class="discussion-footer">
+                                <div class="discussion-author">
+                                    <div class="author-avatar">AM</div>
+                                    <span>AutoMaster</span>
+                                </div>
+                                <div class="discussion-stats">
+                                    <span>8 replies</span>
+                                    <span>2,341 views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="sidebar-card">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <path d="M20 13h-7a3 3 0 0 0-3 3v5a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3v-5a3 3 0 0 0-3-3z"></path>
+                            </svg>
+                            Top Contributors
+                        </h3>
+                        <div class="contributors-list">
+                            <div class="contributor">
+                                <div class="contributor-avatar">
+                                    <div class="avatar">NN</div>
+                                    <div class="rank">1</div>
+                                </div>
+                                <div class="contributor-info">
+                                    <div class="name">NetworkNinja</div>
+                                    <div class="posts">234 posts</div>
+                                </div>
+                                <div class="contributor-stats">
+                                    <span class="badge expert">Expert</span>
+                                    <span class="reputation">5,421</span>
+                                </div>
+                            </div>
+
+                            <div class="contributor">
+                                <div class="contributor-avatar">
+                                    <div class="avatar">SG</div>
+                                </div>
+                                <div class="contributor-info">
+                                    <div class="name">SecurityGuru</div>
+                                    <div class="posts">189 posts</div>
+                                </div>
+                                <div class="contributor-stats">
+                                    <span class="badge expert">Expert</span>
+                                    <span class="reputation">4,892</span>
+                                </div>
+                            </div>
+
+                            <div class="contributor">
+                                <div class="contributor-avatar">
+                                    <div class="avatar">CE</div>
+                                </div>
+                                <div class="contributor-info">
+                                    <div class="name">CloudEngineer42</div>
+                                    <div class="posts">156 posts</div>
+                                </div>
+                                <div class="contributor-stats">
+                                    <span class="badge advanced">Advanced</span>
+                                    <span class="reputation">3,234</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Quick Actions</h3>
+                        <div class="action-buttons">
+                            <button class="action-button primary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                New Discussion
+                            </button>
+                            <button class="action-button">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.35-4.35"></path>
+                                </svg>
+                                Search Topics
+                            </button>
+                            <button class="action-button">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                                </svg>
+                                Browse Tags
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Community Guidelines</h3>
+                        <ul class="guidelines-list">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                Be respectful and constructive
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                Share technical expertise
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                Search before posting
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                Mark solutions as accepted
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    <span>Membership Plans</span>
+                </div>
+                <h2>Choose Your <span class="gradient-text">Learning Path</span></h2>
+                <p>Start free and upgrade as you grow. All plans include access to our core content with premium features for serious learners.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="plan-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4.5 16.5c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2zM4.5 12.5c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2zM4.5 8.5c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2z"></path>
+                                <line x1="13.5" y1="6.5" x2="19.5" y2="6.5"></line>
+                                <line x1="13.5" y1="10.5" x2="19.5" y2="10.5"></line>
+                                <line x1="13.5" y1="14.5" x2="19.5" y2="14.5"></line>
+                                <line x1="13.5" y1="18.5" x2="19.5" y2="18.5"></line>
+                            </svg>
+                        </div>
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="amount">$0</span>
+                            <span class="period">forever</span>
+                        </div>
+                        <p>Perfect for getting started with network learning</p>
+                    </div>
+                    <button class="plan-button">Start Free</button>
+                    <ul class="plan-features">
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Access to all Deep Dive articles
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Knowledge Base wiki access
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Community forum participation
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Packet analysis viewing
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Basic interactive labs (5 per month)
+                        </li>
+                        <li class="excluded">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            Advanced lab simulations
+                        </li>
+                        <li class="excluded">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            Download packet captures
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="popular-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        Most Popular
+                    </div>
+                    <div class="pricing-header">
+                        <div class="plan-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="amount">$29</span>
+                            <span class="period">per month</span>
+                        </div>
+                        <p>For serious network engineers and IT professionals</p>
+                    </div>
+                    <button class="plan-button primary">Start Professional</button>
+                    <ul class="plan-features">
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Everything in Free
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Unlimited interactive labs
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Advanced lab simulations
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Download all packet captures
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Exclusive case studies
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Email support
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Certificate of completion
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="plan-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v6m0 6v6m4.22-13.22l4.24 4.24M1.54 9.96l4.24 4.24M20.46 14.04l4.24 4.24M1.54 14.04l4.24-4.24M20.46 9.96l4.24-4.24"></path>
+                            </svg>
+                        </div>
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="amount">Custom</span>
+                            <span class="period">contact us</span>
+                        </div>
+                        <p>For teams and organizations with advanced needs</p>
+                    </div>
+                    <button class="plan-button">Contact Sales</button>
+                    <ul class="plan-features">
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Everything in Professional
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Unlimited team members
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Private lab environments
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Custom lab development
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Priority phone support
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Dedicated account manager
+                        </li>
+                        <li class="included">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            On-site training options
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <h3>What Our Members Say</h3>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <p>"DeepNet Labs transformed how I approach network design. The interactive labs are incredibly realistic and have saved me countless hours of trial and error."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SC</div>
+                            <div>
+                                <div class="author-name">Sarah Chen</div>
+                                <div class="author-role">Network Architect at TechCorp</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <p>"The packet analysis section alone is worth the subscription. I've learned more about network troubleshooting in 3 months than in 5 years on the job."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MR</div>
+                            <div>
+                                <div class="author-name">Michael Rodriguez</div>
+                                <div class="author-role">DevOps Engineer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <p>"As a security professional, the depth of technical content here is unmatched. The community is also incredibly knowledgeable and helpful."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">LW</div>
+                            <div>
+                                <div class="author-name">Lisa Wang</div>
+                                <div class="author-role">Security Consultant</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Can I cancel my subscription anytime?
+                        </h4>
+                        <p>Yes, you can cancel your subscription at any time. Your access will continue until the end of your billing period.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Do you offer student discounts?
+                        </h4>
+                        <p>Yes! We offer a 50% discount for students with valid .edu email addresses. Contact our support team to get your discount code.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Are the labs compatible with mobile devices?
+                        </h4>
+                        <p>While you can access the content on mobile, we recommend using a desktop or laptop computer for the best interactive lab experience.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Can I share my account with my team?
+                        </h4>
+                        <p>Individual accounts are for single users only. For team access, check out our Enterprise plans which support multiple users.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            Do you provide certificates?
+                        </h4>
+                        <p>Professional and Enterprise members receive certificates of completion for each lab and course they finish.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            What payment methods do you accept?
+                        </h4>
+                        <p>We accept all major credit cards, PayPal, and bank transfers for Enterprise plans.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guarantee-section">
+                <div class="guarantee-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <h3>30-Day Money Back Guarantee</h3>
+                <p>Try DeepNet Labs risk-free. If you're not completely satisfied with your membership, we'll refund your payment within 30 days, no questions asked.</p>
+                <div class="cta-buttons">
+                    <button class="primary-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                        Start Free Trial
+                    </button>
+                    <button class="secondary-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        Contact Sales
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-header">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                        <h3>Stay on the Cutting Edge</h3>
+                    </div>
+                    <p>Get weekly deep dives, packet analysis, and exclusive lab content delivered to your inbox. Join 10,000+ network engineers who trust DeepNet Labs.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="4 17 10 11 4 5"></polyline>
+                                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                                    <line x1="12" y1="5" x2="20" y2="5"></line>
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                </svg>
+                                <div class="status-dot"></div>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-main">DeepNet</span>
+                                <span class="logo-accent">Labs</span>
+                            </div>
+                        </div>
+                        <p>The premier platform for deep technical learning in networking, security, and cloud infrastructure. Master technology from the inside out.</p>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>hello@deepnetlabs.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13 9-13 9-13 9 6 9 13z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                <span>San Francisco, CA & Remote</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.13a13.16 13.16 0 0 0-5.64-1.53l-1.34.81a6 6 0 0 0-6.62 0l-1.34-.81A13.16 13.16 0 0 0 5.24 2.13C2.27 2.65 1.09 1 1.09 1a5.07 5.07 0 0 0 .09 3.77A5.44 5.44 0 0 0 3.5 17.5c0 5.46 3.3 6.65 6.44 7a3.37 3.37 0 0 0 .94 2.61V19"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="YouTube">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Discord">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.19-1.69-3.3-3-4.5-3S1 7.31 1 9c0 2 3 9 3 9s3-7 3-9c0-2-1.31-3.5-3-4.5z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="link-column">
+                            <h4>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="4 17 10 11 4 5"></polyline>
+                                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                                </svg>
+                                Product
+                            </h4>
+                            <ul>
+                                <li><a href="#labs">Interactive Labs</a></li>
+                                <li><a href="#knowledge">Knowledge Base</a></li>
+                                <li><a href="#deepdive">Deep Dives</a></li>
+                                <li><a href="#packets">Packet Analysis</a></li>
+                                <li><a href="#community">Community</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-column">
+                            <h4>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                                Resources
+                            </h4>
+                            <ul>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">API Reference</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Webinars</a></li>
+                                <li><a href="#">Certification</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-column">
+                            <h4>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                Company
+                            </h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Partners</a></li>
+                                <li><a href="#">Press Kit</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Status</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-column">
+                            <h4>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                Legal
+                            </h4>
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                                <li><a href="#">GDPR Compliance</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">SLA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="technologies">
+                        <h3>Technologies We Cover</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">🔧 Cisco</div>
+                            <div class="tech-item">⚙️ Juniper</div>
+                            <div class="tech-item">☁️ AWS</div>
+                            <div class="tech-item">☸️ Kubernetes</div>
+                            <div class="tech-item">🐍 Python</div>
+                            <div class="tech-item">🐳 Docker</div>
+                            <div class="tech-item">🏗️ Terraform</div>
+                            <div class="tech-item">🤖 Ansible</div>
+                        </div>
+                    </div>
+
+                    <div class="certifications">
+                        <h3>Certifications & Compliance</h3>
+                        <div class="cert-grid">
+                            <div class="cert-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <div>
+                                    <div class="cert-name">ISO 27001</div>
+                                    <div class="cert-desc">Information Security Management</div>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <div>
+                                    <div class="cert-name">SOC 2 Type II</div>
+                                    <div class="cert-desc">Security & Availability Compliance</div>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <div>
+                                    <div class="cert-name">GDPR Compliant</div>
+                                    <div class="cert-desc">Data Protection Regulation</div>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <div>
+                                    <div class="cert-name">AWS Partner</div>
+                                    <div class="cert-desc">Advanced Technology Partner</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        © 2024 DeepNet Labs. All rights reserved. Built with <span class="heart">❤️</span> for network engineers worldwide.
+                    </div>
+                    <div class="bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
